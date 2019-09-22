@@ -49,7 +49,6 @@
       display: flex;
       align-items: flex-end;
       padding: 10px;
-      background-color: white;
       border-right: 1px solid black;
       flex-direction: column;
       min-width: 150px;
@@ -64,12 +63,30 @@
       margin-bottom: 2px;
     }
     .under-construction {
-      font-size: 25em;
+      font-size: 40vw;
+    }
+    .t {
+      font-size: 5vw;
+      font-weight: bold;
+    }
+    .watermark {
+      opacity: 0.3;
+      position: fixed;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      justify-content: center;
     }
   </style>
 </head>
 <body>
-  <div class="layout">
+  <div class="watermark">
+    <i class="fas fa-tools under-construction"></i><br>
+    <span class="t">Site Under Construction</span>
+  </div>
+  <!-- <div class="layout">
     <div class="menu">
       <div>
         <a href="#">Home</a>
@@ -78,35 +95,8 @@
       <div><a href="#">Contact</a></div>
     </div>
     <div class="content">
-      <h1>Website Under Construction</h1>
-      <p>
-        <i class="fas fa-tools under-construction"></i>
-      </p>
+      <h1>Website</h1>
     </div> 
-  </div>
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!--<div class="container">
-    <div class="row">
-      <div class="two columns">
-        <nav>
-            <a href="home">Home</a><br>
-            <a href="about">About</a><br>
-            <a href="contact">Contact</a><br>
-        </nav>
-      </div>
-      <div class="ten columns">
-          <h4>Basic Page</h4>
-          <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="column">Copyright 2019</div>
-    </div>
-  </div>
--->
-
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  </div> -->
 </body>
 </html>
